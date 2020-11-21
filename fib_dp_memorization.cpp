@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#define MAX 100
+#define MAX 1000000
 #define NIL -1
 
 int lookup[MAX];
@@ -15,6 +15,8 @@ void _initialize(){
 	}
 }
 
+// This is decently efficient as it takes O(n)
+// But we can also optimize it further by using matrices to have(O(logn)).
 int fib_memorization(int n){
 	if(n <= 1) return 1;
 	if(lookup[n]!=-1) return lookup[n];
@@ -22,7 +24,7 @@ int fib_memorization(int n){
 }
 
 int main(){
-	int n = 40;
+	int n = 32343242;
 	_initialize();
 	cout << fib_memorization(n) << endl;
 	return 1;

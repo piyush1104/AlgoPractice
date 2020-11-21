@@ -10,6 +10,7 @@ int main(){
 	return 1;
 }
 
+// this is very inefficient because we are calculating some values multiple times. It is of the order 2^n
 int fib(int n){
 	if(n <=1 ){
 		return 1;

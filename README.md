@@ -1,6 +1,6 @@
 A repo with my practice for algorithms in c++
 
-Add these into your rc file
+Add these into your shell config files (.bashrc/.zshrc) file
 
 
 compile-and-run() {
