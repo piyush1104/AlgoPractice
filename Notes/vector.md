@@ -151,7 +151,7 @@ A.push_back((int *)malloc(length * sizeof(int)));
 
 **See this**
 
-![important-stuff]("Web capture_22-11-2020_192929_stackoverflow.com.jpeg")
+![important-stuff](./Web%20capture_22-11-2020_192929_stackoverflow.com.jpeg)
 
 
 **swap**
