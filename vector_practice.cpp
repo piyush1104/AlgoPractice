@@ -15,19 +15,19 @@ int main(int argc, char const *argv[])
 	}
 	for (vector<int>::iterator i = v1.begin(); i != v1.end(); ++i)
 	{
-		cout << '\t' << *i;
+		cout << *i << ' ';
 	}
 	cout << endl;
 
-	cout << "Size: " << v1.size();
-	cout << "\nCapacity: " << v1.capacity();
-	cout << "\nMax Size: " << v1.max_size();
+	cout << "Size: " << v1.size() << endl; // Size: 5
+	cout << "Capacity: " << v1.capacity() << endl; // Capacity: 8
+	cout << "Max Size: " << v1.max_size() << endl; // Max Size: 4611686018427387903
 	cout << endl;
 
 	v1.resize(4);
 	for (vector<int>::iterator i = v1.begin(); i != v1.end(); ++i)
 	{
-		cout << "\t" << *i;
+		cout << *i << ' ';
 	}
 	cout << endl;
 
