@@ -8,6 +8,8 @@ using namespace std;
 #define INT_MIN -2147483648
 
 // woah I made it work in one try. Lol I am on fire.
+// yo, later edit - you stupid human. This is O(n) time and O(n) space algorithm. You could have done it in O(1) space. - Later Piyush
+// check max_subarray_again.cpp
 
 ll maxSumContain(int A[], int start, int end, int index) {
     ll sum = A[index];

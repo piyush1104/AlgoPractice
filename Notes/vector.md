@@ -159,8 +159,34 @@ A.push_back((int *)malloc(length * sizeof(int)));
 swap() – It is used to swap the contents of one vector with another vector of same type. Sizes may differ.
 
 ```cpp
- 
+
 // Swaps v1 and v2
 v1.swap(v2);
 
 ```
+
+### Interesting
+
+```cpp
+
+void processVector(vector<int> test) {
+    test.push_back(10);
+    test.push_back(12);
+}
+
+int main(int argc, char const *argv[])
+{
+    vector<int> test;
+    processVector(test);
+    cout << test.size() << endl;
+    for (vector<int>::iterator itr = test.begin(); itr != test.end(); itr++)
+    {
+        cout << *itr << endl;
+    }
+    return 0;
+}
+
+
+```
+
+^^^ The above returns the size of test as 0. This means that test is not considered like a pointer and it is limited by scopes. (Unlike javascript where objects and arrays are assigned by reference.)
