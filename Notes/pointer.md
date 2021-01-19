@@ -1,6 +1,6 @@
 ### Well I always used to think that
 
-the right of keeping the start while creating a pointer in C/C++ is just after the type declaration.
+the right place of keeping the star(\*) while creating a pointer in C/C++ is just after the type declaration.
 
 ```cpp
 

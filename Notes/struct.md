@@ -1,13 +1,13 @@
 # notes regarding `struct`
 
-if you write your struct as follows 
+if you write your struct as follows
 
 ```cpp
 
 struct Node
 {
 	int data;
-	Node next;	
+	Node next;
 }
 
 ```
@@ -50,4 +50,7 @@ Node *head;
 head = (Node *) malloc(sizeof(Node));
 
 ```
+
+
+A great tutorial explaining all this is - [https://www.programiz.com/c-programming/c-structures-pointers](https://www.programiz.com/c-programming/c-structures-pointers)
 

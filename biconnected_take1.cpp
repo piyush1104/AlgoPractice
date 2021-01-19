@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// ap refers to articulation point. dnf stands for dfn
+// ap refers to articulation point. dfn stands for dfn
 // works perfectly.
 int DFS(vector<int> adj[], int dfn[], bool ap[], int start, int *curr_dfn) {
     *curr_dfn = *curr_dfn + 1;
