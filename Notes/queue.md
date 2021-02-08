@@ -19,7 +19,8 @@ int main(int argc, char const *argv[])
     q.push(11);
     q.push(12);
     q.push(13);
-    q.pop(); // returns 10 (unlike stack which will return 13)
+    q.front(); // returns 10 (unlike stack which will return 13)
+    q.pop(); // remember that pop in c++ does not return anything. It has return type void and just kicks the value out of queue. That's it.
     return 0;
 }
 ```

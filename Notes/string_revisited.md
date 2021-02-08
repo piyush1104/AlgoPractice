@@ -44,7 +44,7 @@ There is also a .compare() function that we can use. About that is written *stri
 
 ```cpp
 //Concatenation is also simple!
-my_str = lip + name2;
+my_str = "lip" + name2;
 my_str += "lip"; //C-string cat works too
 ```
 

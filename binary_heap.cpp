@@ -15,11 +15,11 @@ int parent(int i) {
     return (i - 1)/2;
 }
 
-int leftChild(i) {
+int leftChild(int i) {
     return 2*i + 1;
 }
 
-int rightChild(i) {
+int rightChild(int i) {
     return 2*i + 2;
 }
 
@@ -169,12 +169,21 @@ void makeHeap(Heap *h) {
 // since two child has one parent, the heapify method runs two times for a parent node.
 // But it is not inefficient because since we have already run heapify first time,
 // second time heapify will run in O(1) only. So in total, time complexity will remain same.
-void makeHeap2(Heap* h) {
+void makeHeap2(Heap *h) {
     int n = h->size;
     for(int i = n-1; i>0; i--) {
         int parentIndex = (i - 1) /2;
         heapify(h, parentIndex);
     }
+}
+
+// the most simplest sorting algorithm, once you have created your heap.
+void heapSort(Heap *h) {
+    while(h->size != 0) {
+        int n = extractMinium(h);
+        cout << n << " ";
+    }
+    cout << endl;
 }
 
 
@@ -209,6 +218,10 @@ int main(int argc, char const *argv[])
         if(input == "e") {
             // extract min
             cout << extractMinium(heap) << endl;
+            continue;
+        }
+        if(input == "s") {
+            heapSort(heap);
             continue;
         }
         int value = getInteger(input);
