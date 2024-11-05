@@ -20,6 +20,11 @@ struct Node3 {
 
 int main(int argc, char const *argv[])
 {
+
+    string s1 = "hi";
+    string s2 = "hi";
+    bool hey = s1.compare(s2);
+    cout << hey << endl;
     // this also works
     Node1 head1;
     head1.data = 5;
